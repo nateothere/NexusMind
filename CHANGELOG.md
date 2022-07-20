@@ -30,3 +30,5 @@
 - cli fix golden datasets
 
 - api fix planner prompts
+
+- tests add chunk overlap
