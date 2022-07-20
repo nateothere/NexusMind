@@ -26,3 +26,7 @@
 - config rework planner prompts
 
 - config clarify planner prompts
+
+- cli fix golden datasets
+
+- api fix planner prompts
