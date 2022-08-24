@@ -20,3 +20,5 @@
 - docs rework sse streaming
 
 - docker speed up cli output
+
+- memory tighten chunk overlap
