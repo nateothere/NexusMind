@@ -14,3 +14,5 @@
 - observability refactor agent budgets
 
 - retrieval document mcp stdio loop
+
+- observability add chunk overlap
