@@ -24,15 +24,3 @@
 - memory tighten chunk overlap
 
 - config rework planner prompts
-
-- config clarify planner prompts
-
-- cli fix golden datasets
-
-- api fix planner prompts
-
-- tests add chunk overlap
-
-- memory trim docker healthchecks
-
-- cli refactor otel spans
