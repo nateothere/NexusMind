@@ -10,5 +10,3 @@
 - cli trim rrf fusion
 
 - eval document tool registry
-
-- observability refactor agent budgets
