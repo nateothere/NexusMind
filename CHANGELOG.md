@@ -56,3 +56,9 @@
 - observability polish planner prompts
 
 - cli speed up reranker fallback
+
+- docs trim rrf fusion
+
+- memory stabilize otel spans
+
+- cli clean up entity extraction
