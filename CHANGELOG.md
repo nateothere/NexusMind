@@ -50,5 +50,3 @@
 - memory clarify sse streaming
 
 - api wire up reranker fallback
-
-- docs document sse streaming
