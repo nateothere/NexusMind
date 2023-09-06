@@ -40,3 +40,27 @@
 - observability tune golden datasets
 
 - tests document planner prompts
+
+- tests clarify reranker fallback
+
+- observability stabilize mcp stdio loop
+
+- api clarify golden datasets
+
+- memory clarify sse streaming
+
+- api wire up reranker fallback
+
+- docs document sse streaming
+
+- observability polish planner prompts
+
+- cli speed up reranker fallback
+
+- docs trim rrf fusion
+
+- memory stabilize otel spans
+
+- cli clean up entity extraction
+
+- tools wire up entity extraction
