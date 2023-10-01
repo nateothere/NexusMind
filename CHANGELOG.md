@@ -44,3 +44,5 @@
 - tests clarify reranker fallback
 
 - observability stabilize mcp stdio loop
+
+- api clarify golden datasets
