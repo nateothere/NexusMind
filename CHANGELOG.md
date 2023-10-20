@@ -68,3 +68,5 @@
 - docker tune graph expansion
 
 - examples wire up bm25 tokenizer
+
+- graph clean up sse streaming
