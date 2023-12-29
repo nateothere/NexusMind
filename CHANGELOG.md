@@ -60,3 +60,9 @@
 - docs trim rrf fusion
 
 - memory stabilize otel spans
+
+- cli clean up entity extraction
+
+- tools wire up entity extraction
+
+- docker tune graph expansion
