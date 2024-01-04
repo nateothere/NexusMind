@@ -66,3 +66,21 @@
 - tools wire up entity extraction
 
 - docker tune graph expansion
+
+- examples wire up bm25 tokenizer
+
+- graph clean up sse streaming
+
+- observability simplify otel spans
+
+- ingestion harden docker healthchecks
+
+- api trim planner prompts
+
+- observability document mcp stdio loop
+
+- ingestion simplify graph expansion
+
+- agents document rrf fusion
+
+- memory extend planner prompts
