@@ -82,5 +82,3 @@
 - ingestion simplify graph expansion
 
 - agents document rrf fusion
-
-- memory extend planner prompts
