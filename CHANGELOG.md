@@ -80,5 +80,3 @@
 - observability document mcp stdio loop
 
 - ingestion simplify graph expansion
-
-- agents document rrf fusion
