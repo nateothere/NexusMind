@@ -78,5 +78,3 @@
 - api trim planner prompts
 
 - observability document mcp stdio loop
-
-- ingestion simplify graph expansion
