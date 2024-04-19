@@ -74,7 +74,3 @@
 - observability simplify otel spans
 
 - ingestion harden docker healthchecks
-
-- api trim planner prompts
-
-- observability document mcp stdio loop
