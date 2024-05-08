@@ -104,5 +104,3 @@
 - mcp simplify mcp stdio loop
 
 - tests tighten entity extraction
-
-- cli trim entity extraction
