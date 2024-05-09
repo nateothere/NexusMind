@@ -94,13 +94,3 @@
 - docs polish entity extraction
 
 - docs add bm25 tokenizer
-
-- eval clarify sse streaming
-
-- examples simplify entity extraction
-
-- packaging document rrf fusion
-
-- mcp simplify mcp stdio loop
-
-- tests tighten entity extraction
