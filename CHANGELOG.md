@@ -92,5 +92,3 @@
 - memory simplify eval harness
 
 - docs polish entity extraction
-
-- docs add bm25 tokenizer
