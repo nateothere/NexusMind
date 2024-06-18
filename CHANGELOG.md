@@ -76,3 +76,17 @@
 - ingestion harden docker healthchecks
 
 - api trim planner prompts
+
+- observability document mcp stdio loop
+
+- ingestion simplify graph expansion
+
+- agents document rrf fusion
+
+- memory extend planner prompts
+
+- agents fix mcp stdio loop
+
+- api rework reranker fallback
+
+- memory simplify eval harness
