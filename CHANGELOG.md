@@ -86,3 +86,5 @@
 - memory extend planner prompts
 
 - agents fix mcp stdio loop
+
+- api rework reranker fallback
