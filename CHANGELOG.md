@@ -88,3 +88,11 @@
 - agents fix mcp stdio loop
 
 - api rework reranker fallback
+
+- memory simplify eval harness
+
+- docs polish entity extraction
+
+- docs add bm25 tokenizer
+
+- eval clarify sse streaming
