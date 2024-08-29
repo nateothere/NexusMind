@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible problem with NexusMind
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Exact commands and inputs. Redact anything sensitive.
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Python version, Ollama version, model names, config.yaml (or "defaults").
+    validations:
+      required: true
