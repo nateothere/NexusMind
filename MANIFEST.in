@@ -1,0 +1,12 @@
+include LICENSE
+include NOTICE
+include README.md
+include CHANGELOG.md
+include VERSION
+include config.example.yaml
+include .env.example
+recursive-include docs *.md *.svg
+recursive-include examples *.py
+include requirements.txt
+include requirements-dev.txt
+include requirements-gpu.txt
