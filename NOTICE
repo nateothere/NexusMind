@@ -1,0 +1,29 @@
+NexusMind bundles or references third-party components. Their licenses
+apply to their respective software; NexusMind itself is MIT licensed
+(see LICENSE).
+
+LLM / embedding weights (downloaded at runtime by Ollama or from
+Hugging Face):
+  - BAAI/bge-m3                  MIT
+  - BAAI/bge-reranker-v2-m3      MIT
+  - Qwen2.5 (qwen2.5:14b-instruct, llama3.1:8b)  Apache-2.0 (Qwen) / Meta Llama Community License
+
+Libraries (installed as dependencies):
+  - Docling                    MIT
+  - pypdf                      BSD-3-Clause
+  - faster-whisper             MIT
+  - pytesseract                Apache-2.0
+  - Qdrant (client + server)   Apache-2.0
+  - Kuzu                       MIT
+  - Tantivy                    MIT
+  - tree-sitter                MIT
+  - trafilatura                Apache-2.0
+  - FastAPI / Uvicorn          MIT
+  - Typer / Rich               MIT
+  - Pydantic / Pydantic-Settings  MIT
+  - structlog                  MIT / Apache-2.0 (dual)
+  - OpenTelemetry              Apache-2.0
+  - RAGAS                      Apache-2.0
+  - numpy                      BSD-3-Clause
+
+If you redistribute NexusMind, include this file alongside LICENSE.
