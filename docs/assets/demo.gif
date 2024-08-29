@@ -1,0 +1,17 @@
+# demo.gif
+
+Placeholder — replace with a real terminal recording of:
+
+```
+nexusmind ingest ./knowledge-base --recursive
+nexusmind ask "Summarize the Q3 migration plan." --citations
+```
+
+Record with `asciinema rec demo.cast` then convert:
+
+```bash
+pip install aggdraw ansi2html
+agg demo.cast --cols 100 --rows 28 --theme dracula -o docs/assets/demo.gif
+```
+
+Keep the GIF under ~2 MB and reference it relatively from README.md.
