@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a new capability for NexusMind
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What gap does this fill? Who hits it?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Sketch the API/UX. Links to RFCs welcome.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: I can implement this myself
+        - label: Needs a maintainer (design RFC)
+        - label: Retrieval behavior — will run the eval gate
