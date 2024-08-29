@@ -1,0 +1,3 @@
+{"question": "Which API changes in the migration plan break contract Y?", "answer": "The v2 pagination changes break contract Y.", "relevant_chunks": ["chunk-a", "chunk-b"]}
+{"question": "How does change X in service A affect contract Z?", "answer": "Change X alters the retry policy of contract Z.", "relevant_chunks": ["chunk-b", "chunk-c"]}
+{"question": "What models does NexusMind support?", "answer": "Ollama and vLLM backends are supported.", "relevant_chunks": ["chunk-d"]}
