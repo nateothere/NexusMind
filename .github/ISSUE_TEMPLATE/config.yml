@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord
+    url: https://discord.gg
+    about: Real-time help and showcases
+  - name: Discussions
+    url: https://github.com/nexusmind-ai/nexusmind/discussions
+    about: Questions and RFCs
+  - name: Security
+    url: https://github.com/nexusmind-ai/nexusmind/security
+    about: Report vulnerabilities privately
