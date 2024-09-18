@@ -96,3 +96,7 @@
 - docs add bm25 tokenizer
 
 - eval clarify sse streaming
+
+- examples simplify entity extraction
+
+- packaging document rrf fusion
