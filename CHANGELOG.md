@@ -98,7 +98,3 @@
 - eval clarify sse streaming
 
 - examples simplify entity extraction
-
-- packaging document rrf fusion
-
-- mcp simplify mcp stdio loop
