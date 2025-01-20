@@ -72,3 +72,47 @@
 - graph clean up sse streaming
 
 - observability simplify otel spans
+
+- ingestion harden docker healthchecks
+
+- api trim planner prompts
+
+- observability document mcp stdio loop
+
+- ingestion simplify graph expansion
+
+- agents document rrf fusion
+
+- memory extend planner prompts
+
+- agents fix mcp stdio loop
+
+- api rework reranker fallback
+
+- memory simplify eval harness
+
+- docs polish entity extraction
+
+- docs add bm25 tokenizer
+
+- eval clarify sse streaming
+
+- examples simplify entity extraction
+
+- packaging document rrf fusion
+
+- mcp simplify mcp stdio loop
+
+- tests tighten entity extraction
+
+- cli trim entity extraction
+
+- retrieval document eval harness
+
+- ci fix mcp stdio loop
+
+- mcp clean up kuzu store
+
+- cli fix mcp stdio loop
+
+- retrieval refactor agent budgets
