@@ -116,3 +116,13 @@
 - cli fix mcp stdio loop
 
 - retrieval refactor agent budgets
+
+- ci clarify mcp stdio loop
+
+- ingestion clarify episodic recall
+
+- docker stabilize tool registry
+
+- config document chunk overlap
+
+- ingestion simplify episodic recall
