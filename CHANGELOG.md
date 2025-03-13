@@ -112,5 +112,3 @@
 - ci fix mcp stdio loop
 
 - mcp clean up kuzu store
-
-- cli fix mcp stdio loop
