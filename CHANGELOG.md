@@ -110,5 +110,3 @@
 - retrieval document eval harness
 
 - ci fix mcp stdio loop
-
-- mcp clean up kuzu store
