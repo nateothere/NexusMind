@@ -108,5 +108,3 @@
 - cli trim entity extraction
 
 - retrieval document eval harness
-
-- ci fix mcp stdio loop
