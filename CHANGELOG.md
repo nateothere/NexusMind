@@ -108,3 +108,23 @@
 - cli trim entity extraction
 
 - retrieval document eval harness
+
+- ci fix mcp stdio loop
+
+- mcp clean up kuzu store
+
+- cli fix mcp stdio loop
+
+- retrieval refactor agent budgets
+
+- ci clarify mcp stdio loop
+
+- ingestion clarify episodic recall
+
+- docker stabilize tool registry
+
+- config document chunk overlap
+
+- ingestion simplify episodic recall
+
+- config clean up planner prompts
