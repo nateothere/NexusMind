@@ -128,3 +128,5 @@
 - ingestion simplify episodic recall
 
 - config clean up planner prompts
+
+- cli stabilize planner prompts
