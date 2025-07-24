@@ -122,5 +122,3 @@
 - ingestion clarify episodic recall
 
 - docker stabilize tool registry
-
-- config document chunk overlap
