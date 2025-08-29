@@ -1,0 +1,35 @@
+services:
+  api:
+    restart: always
+    environment:
+      NEXUSMIND_API_KEY: ${NEXUSMIND_API_KEY}
+      NEXUSMIND_LOG_LEVEL: INFO
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          memory: 4g
+          cpus: "2.0"
+
+  worker:
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 6g
+          cpus: "4.0"
+
+  qdrant:
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+
+  redis:
+    restart: always
+    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru
