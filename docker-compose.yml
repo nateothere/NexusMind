@@ -1,0 +1,89 @@
+services:
+  api:
+    build: .
+    command: uvicorn nexusmind.api.app:create_app --factory --host 0.0.0.0 --port 8000
+    env_file: .env
+    environment:
+      NEXUSMIND_QDRANT_URL: http://qdrant:6333
+      NEXUSMIND_REDIS_URL: redis://redis:6379/0
+      NEXUSMIND_LLM_BASE_URL: http://ollama:11434/v1
+    ports:
+      - "8000:8000"
+    volumes:
+      - nexusmind_data:/data
+    depends_on:
+      qdrant:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/v1/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  ui:
+    image: python:3.11-slim
+    command: sh -c "pip install -q streamlit && streamlit run /app/ui/app.py --server.port 8501"
+    volumes:
+      - ./ui:/app/ui:ro
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+
+  worker:
+    build: .
+    command: rq worker nexusmind --url redis://redis:6379/0
+    env_file: .env
+    environment:
+      NEXUSMIND_QDRANT_URL: http://qdrant:6333
+      NEXUSMIND_REDIS_URL: redis://redis:6379/0
+      NEXUSMIND_LLM_BASE_URL: http://ollama:11434/v1
+    volumes:
+      - nexusmind_data:/data
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  qdrant:
+    image: qdrant/qdrant:v1.9.0
+    volumes:
+      - qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/localhost/6333"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  nexusmind_data:
+  qdrant_data:
+  ollama_data:
