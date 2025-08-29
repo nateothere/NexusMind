@@ -1,0 +1,33 @@
+# NexusMind
+
+[![CI](https://github.com/nexusmind-ai/nexusmind/actions/workflows/ci.yml/badge.svg)](https://github.com/nexusmind-ai/nexusmind/actions/workflows/ci.yml)
+
+Local-first Agentic RAG engine: GraphRAG, hybrid retrieval, multi-agent
+orchestration, MCP-native tooling, 100% local inference.
+
+## Commands
+
+```bash
+make setup      # venv + deps + pre-commit + ollama models
+make dev        # api :8000 + ui :8501 + worker
+make test       # pytest, coverage >= 85%
+make lint       # ruff + mypy --strict
+make docs       # mkdocs serve
+make build      # python -m build
+make docker-build
+make release    # tag + publish (semantic-release)
+make clean
+```
+
+## Nav
+
+- [Quickstart](index.md)
+- [Usage](usage.md)
+- [API](api.md)
+- [Architecture](../ARCHITECTURE.md)
+- [FAQ](../FAQ.md)
+
+## Theme
+
+Material for MkDocs with the default palette. Assets live in
+`docs/assets/`.
