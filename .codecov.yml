@@ -1,0 +1,15 @@
+coverage:
+  status:
+    project:
+      default:
+        target: 85%
+        threshold: 1%
+    patch:
+      default:
+        target: 80%
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+ignore:
+  - "src/nexusmind/cli.py"
+  - "src/nexusmind/mcp/server.py"
