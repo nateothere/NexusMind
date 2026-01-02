@@ -120,3 +120,15 @@
 - ci clarify mcp stdio loop
 
 - ingestion clarify episodic recall
+
+- docker stabilize tool registry
+
+- config document chunk overlap
+
+- ingestion simplify episodic recall
+
+- config clean up planner prompts
+
+- cli stabilize planner prompts
+
+- cli rework golden datasets
