@@ -134,3 +134,5 @@
 - cli rework golden datasets
 
 - examples tighten graph expansion
+
+- ci clean up kuzu store
