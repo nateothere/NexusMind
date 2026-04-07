@@ -136,3 +136,11 @@
 - examples tighten graph expansion
 
 - ci clean up kuzu store
+
+- api trim eval harness
+
+- graph document entity extraction
+
+- retrieval simplify episodic recall
+
+- agents clarify episodic recall
