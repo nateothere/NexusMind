@@ -144,3 +144,11 @@
 - retrieval simplify episodic recall
 
 - agents clarify episodic recall
+
+- docker polish eval harness
+
+- config clarify sse streaming
+
+- eval clean up mcp stdio loop
+
+- tests clean up reranker fallback
