@@ -152,3 +152,7 @@
 - eval clean up mcp stdio loop
 
 - tests clean up reranker fallback
+
+- packaging stabilize sse streaming
+
+- memory polish episodic recall
