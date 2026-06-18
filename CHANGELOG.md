@@ -140,3 +140,5 @@
 - api trim eval harness
 
 - graph document entity extraction
+
+- retrieval simplify episodic recall
