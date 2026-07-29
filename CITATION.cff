@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use NexusMind in research, please cite it as follows."
+title: "NexusMind: A Local-First Agentic RAG Engine"
+abstract: >-
+  Local-first Agentic RAG engine combining GraphRAG, hybrid retrieval
+  (BM25 + dense + RRF + rerank), multi-agent orchestration and MCP-native
+  tooling with 100% local inference via Ollama.
+authors:
+  - family-names: "Contributors"
+    given-names: "NexusMind"
+date-released: "2025-11-18"
+version: 0.3.0
+doi: 10.5281/zenodo.0000000
+url: "https://github.com/nexusmind-ai/nexusmind"
+keywords:
+  - rag
+  - graphrag
+  - llm
+  - retrieval
+  - mcp
+  - local-first
+license: MIT
