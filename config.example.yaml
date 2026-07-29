@@ -1,0 +1,29 @@
+# NexusMind behavior configuration. Secrets go in .env.
+
+retriever:
+  top_k: 12
+  rerank: true
+  graph_expansion: 1        # hops; 0 disables graph expansion
+  rrf_k: 60
+  hyde: false
+  multi_query: false
+
+agents:
+  max_iterations: 8
+  budget_tokens: 60000
+  temperature: 0.2
+
+ingestion:
+  chunk_size: 512
+  chunk_overlap: 64
+  semantic_chunking: true
+  parser: native            # native | docling
+  recursive: false
+
+memory:
+  buffer_turns: 8
+  episodic: true
+
+observability:
+  traces: true
+  langfuse: false
