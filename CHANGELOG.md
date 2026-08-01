@@ -1,59 +1,148 @@
-# Changelog
 
-All notable changes to NexusMind are documented here.
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+- api tighten docker healthchecks
 
-## [Unreleased]
+- ingestion clarify bm25 tokenizer
 
-### Added
-- Late chunking prototype behind `retriever.late_chunking` flag
-- ColBERT-style late-interaction scoring in the eval harness
+- tests add planner prompts
 
-### Changed
-- CLI `ask` now emits ANSI-coded citations by default
+- ingestion polish entity extraction
 
-## [0.3.0] - 2025-11-18
+- cli trim rrf fusion
 
-### Added
-- MCP server over stdio (`nexusmind mcp serve`) and streamable HTTP (`--http`)
-- `nexusmind tools connect` to attach external MCP tools as agent tools
-- Episodic memory: long-term answers written back into the vector index
-- Structured outputs: JSON-schema constrained decoding for every agent step
-- `GET /v1/health` model status and `GET /mcp` streamable-HTTP endpoint
-- OpenTelemetry spans for parse → retrieve → rerank → agent steps
-- Optional Langfuse tracing via `NEXUSMIND_LANGFUSE_KEY`
+- eval document tool registry
 
-### Fixed
-- RRF fusion now normalizes per-index scores before merging (was skewing
-  dense candidates with very high similarities)
-- Semantic chunker no longer drops single-paragraph documents
+- observability refactor agent budgets
 
-## [0.2.0] - 2025-06-30
+- retrieval document mcp stdio loop
 
-### Added
-- GraphRAG v1: LLM entity/relation extraction into an embedded Kuzu graph
-- 1-hop entity expansion at query time (`retriever.graph_expansion`)
-- Multi-agent runtime: Planner / Researcher / Critic / Writer with
-  per-agent token budgets
-- `@tool` decorator with automatic JSON-schema generation (Pydantic v2)
-- RAGAS-style eval harness (`nexusmind eval run`) with golden datasets
-- Docker Compose stack: api + ui + worker + qdrant + redis + ollama
+- observability add chunk overlap
 
-### Changed
-- Hybrid retrieval now fuses BM25 + dense via RRF before reranking
+- docs rework sse streaming
 
-## [0.1.0] - 2024-12-20
+- docker speed up cli output
 
-### Added
-- Ingestion pipeline: Markdown/text parsing, recursive + semantic chunking
-- Hybrid retriever: pure-Python BM25 + Ollama embeddings (bge-m3)
-- Reciprocal Rank Fusion and optional cross-encoder reranking
-- FastAPI server with SSE streaming for `/v1/ask`
-- Typer CLI: `ingest`, `ask`, `chat`, `serve`, `eval`
-- Pydantic Settings + YAML configuration
+- memory tighten chunk overlap
 
-[Unreleased]: https://github.com/nexusmind-ai/nexusmind/compare/v0.3.0...HEAD
-[0.3.0]: https://github.com/nexusmind-ai/nexusmind/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/nexusmind-ai/nexusmind/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/nexusmind-ai/nexusmind/releases/tag/v0.1.0
+- config rework planner prompts
+
+- config clarify planner prompts
+
+- cli fix golden datasets
+
+- api fix planner prompts
+
+- tests add chunk overlap
+
+- memory trim docker healthchecks
+
+- cli refactor otel spans
+
+- observability tune golden datasets
+
+- tests document planner prompts
+
+- tests clarify reranker fallback
+
+- observability stabilize mcp stdio loop
+
+- api clarify golden datasets
+
+- memory clarify sse streaming
+
+- api wire up reranker fallback
+
+- docs document sse streaming
+
+- observability polish planner prompts
+
+- cli speed up reranker fallback
+
+- docs trim rrf fusion
+
+- memory stabilize otel spans
+
+- cli clean up entity extraction
+
+- tools wire up entity extraction
+
+- docker tune graph expansion
+
+- examples wire up bm25 tokenizer
+
+- graph clean up sse streaming
+
+- observability simplify otel spans
+
+- ingestion harden docker healthchecks
+
+- api trim planner prompts
+
+- observability document mcp stdio loop
+
+- ingestion simplify graph expansion
+
+- agents document rrf fusion
+
+- memory extend planner prompts
+
+- agents fix mcp stdio loop
+
+- api rework reranker fallback
+
+- memory simplify eval harness
+
+- docs polish entity extraction
+
+- docs add bm25 tokenizer
+
+- eval clarify sse streaming
+
+- examples simplify entity extraction
+
+- packaging document rrf fusion
+
+- mcp simplify mcp stdio loop
+
+- tests tighten entity extraction
+
+- cli trim entity extraction
+
+- retrieval document eval harness
+
+- ci fix mcp stdio loop
+
+- mcp clean up kuzu store
+
+- cli fix mcp stdio loop
+
+- retrieval refactor agent budgets
+
+- ci clarify mcp stdio loop
+
+- ingestion clarify episodic recall
+
+- docker stabilize tool registry
+
+- config document chunk overlap
+
+- ingestion simplify episodic recall
+
+- config clean up planner prompts
+
+- cli stabilize planner prompts
+
+- cli rework golden datasets
+
+- examples tighten graph expansion
+
+- ci clean up kuzu store
+
+- api trim eval harness
+
+- graph document entity extraction
+
+- retrieval simplify episodic recall
+
+- agents clarify episodic recall
+
+- docker polish eval harness
