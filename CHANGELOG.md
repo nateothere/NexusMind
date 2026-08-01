@@ -146,3 +146,5 @@
 - agents clarify episodic recall
 
 - docker polish eval harness
+
+- config clarify sse streaming
