@@ -34,3 +34,15 @@ nexusmind eval run --suite rag --dataset ./evals/golden.jsonl --output report.ht
 
 All settings come from `.env` / environment variables with the
 `NEXUSMIND_` prefix — see config.example.yaml for the full table.
+## Streaming from the API
+
+When you want token-by-token output without the CLI, hit `/v1/ask` with `stream: true` and consume the SSE events:
+
+```bash
+curl -N -X POST http://localhost:8000/v1/ask \
+  -H "Authorization: Bearer $NEXUSMIND_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "Summarize the migration plan.", "stream": true}'
+```
+
+Events arrive as `token`, `citation` and `done` frames; the `done` frame carries `latency_ms` and total token count.
