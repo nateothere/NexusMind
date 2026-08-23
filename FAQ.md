@@ -75,3 +75,5 @@ suite is optional and clearly marked.
 **License?**
 MIT for the codebase; downloaded model weights carry their own licenses
 (NOTICE).
+## How do I switch embeddings without re-ingesting?
+Set `NEXUSMIND_EMBED_MODEL` in `.env`, then re-run `nexusmind ingest` on the same folder. Chunks are re-embedded and the dense index is rebuilt; the BM25 index and the graph stay as-is.
