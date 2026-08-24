@@ -60,3 +60,6 @@ MCP streamable-HTTP endpoint for MCP clients.
 {"event": "citation", "data": {"index": 0, "score": 0.93, "source": "docs/plan.md", "page": 3}}
 {"event": "done",     "data": {"answer_id": "a1", "latency_ms": 4120, "tokens": 312}}
 ```
+## Error handling
+
+All endpoints return the standard FastAPI error envelope (`{"detail": ...}`). `422` means validation or pipeline failure (for example, the LLM endpoint is unreachable); `401` means the API key is missing or wrong. When the worker is down, `POST /v1/ingest` still accepts the job and the API responds with `202` semantics on the next poll of the collection.
