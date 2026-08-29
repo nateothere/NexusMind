@@ -1,4 +1,4 @@
-.PHONY: setup dev test lint format typecheck build docker-build docs clean release
+.PHONY: setup dev test lint format typecheck build docker-build docs clean release coverage
 
 PYTHON ?= python3
 VENV ?= .venv
@@ -40,6 +40,9 @@ docs:
 clean:
 	rm -rf $(VENV) build dist *.egg-info .pytest_cache .mypy_cache .ruff_cache
 	find . -type d -name __pycache__ -prune -exec rm -rf {} +
+
+coverage:
+	/bin/pytest --cov --cov-report=html
 
 release:
 	$(VENV)/bin/python scripts/release.sh
